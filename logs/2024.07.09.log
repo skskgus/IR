@@ -1,0 +1,94 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://127.0.0.1:80
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://127.0.0.1:80
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://127.0.0.1:80
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2024 08:37:03] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2024 08:37:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ERROR:app:Exception on /upload [POST]
+Traceback (most recent call last):
+  File "C:\Users\Çìºê¾î\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Çìºê¾î\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Çìºê¾î\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Çìºê¾î\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Çìºê¾î\Desktop\virus_model_site\app.py", line 123, in upload_file
+    return jsonify({'virus_probability': prob})
+NameError: name 'prob' is not defined
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2024 08:38:01] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /upload [POST]
+Traceback (most recent call last):
+  File "C:\Users\Çìºê¾î\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Çìºê¾î\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Çìºê¾î\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Çìºê¾î\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Çìºê¾î\Desktop\virus_model_site\app.py", line 120, in upload_file
+    features = capa(file_path)
+  File "C:\Users\Çìºê¾î\Desktop\virus_model_site\app.py", line 85, in capa
+    parsed_data['Entropy'] = calculate_entropy(file_path)
+  File "C:\Users\Çìºê¾î\Desktop\virus_model_site\app.py", line 26, in calculate_entropy
+    counter = Counter(data)
+NameError: name 'Counter' is not defined
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2024 08:38:33] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://127.0.0.1:80
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on /upload [POST]
+Traceback (most recent call last):
+  File "C:\Users\Çìºê¾î\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Çìºê¾î\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Çìºê¾î\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Çìºê¾î\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Çìºê¾î\Desktop\virus_model_site\app.py", line 124, in upload_file
+    return jsonify({'virus_probability': prob})
+NameError: name 'prob' is not defined
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2024 08:39:38] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2024 08:40:07] "[31m[1mGET /upload HTTP/1.1[0m" 405 -
+ERROR:app:Exception on /upload [POST]
+Traceback (most recent call last):
+  File "C:\Users\Çìºê¾î\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Çìºê¾î\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Çìºê¾î\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Çìºê¾î\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Çìºê¾î\Desktop\virus_model_site\app.py", line 124, in upload_file
+    return jsonify({'virus_probability': prob})
+NameError: name 'prob' is not defined
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2024 08:40:27] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://127.0.0.1:80
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2024 08:41:38] "POST /upload HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://127.0.0.1:80
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
