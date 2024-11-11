@@ -1,25 +1,17 @@
 // src/App.tsx
-import React, { useState } from "react";
-import FileUpload from "./components/FileUpload";
-import Result from "./components/Result";
-import "./App.css";
-
-interface ResultType {
-  normal_probability: string;
-  virus_probability: string;
-  classification: number;
-  chart_data: string;
-}
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import UploadPage from "./pages/UploadPage";
+import ResultPage from "./pages/ResultPage";
 
 function App() {
-  const [result, setResult] = useState<ResultType | null>(null);
-
   return (
-    <div className="App">
-      <h1>Upload a File</h1>
-      <FileUpload setResult={setResult} />
-      {result && <Result result={result} />}
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<UploadPage />} />
+        <Route path="/result" element={<ResultPage />} />
+      </Routes>
+    </Router>
   );
 }
 

@@ -2,14 +2,7 @@
 import React from "react";
 
 interface FileUploadProps {
-  setResult: React.Dispatch<React.SetStateAction<ResultType | null>>;
-}
-
-interface ResultType {
-  normal_probability: string;
-  virus_probability: string;
-  classification: number;
-  chart_data: string;
+  setResult: (data: any) => void;
 }
 
 const FileUpload: React.FC<FileUploadProps> = ({ setResult }) => {
