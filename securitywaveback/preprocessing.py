@@ -172,7 +172,7 @@ col_checklist = ['file_name', 'Entropy', 'ATT&CK Tactic', 'ATT&CK Technique', 'M
 
 #저장한 차원축소 모델 불러오기
 #load 뒤에 pca모델 경로/모델명 입력
-pca_models_dir = r"C:\Users\헤브어\Desktop\virus_model_site\pca_models\pca_models_2024.07.06.pkl"
+pca_models_dir = './pca_models/model.pkl'
 
 pca1_dir = './pca_models/pcaTactic.pkl'
 pca2_dir = './pca_models/pcaTech.pkl'
