@@ -14,7 +14,7 @@ import joblib
 #---------바꿔야 하는 값---------#
 
 #입력 데이터셋 위치
-input_dir = './outputs/outputs.csv'
+input_dir = r'/Users/skgus/irMeetUp/securitywaveback/outputs/outputs.csv'
 
 
 
@@ -172,17 +172,17 @@ col_checklist = ['file_name', 'Entropy', 'ATT&CK Tactic', 'ATT&CK Technique', 'M
 
 #저장한 차원축소 모델 불러오기
 #load 뒤에 pca모델 경로/모델명 입력
-pca_models_dir = './pca_models/model.pkl'
+pca_models_dir = r'/Users/skgus/irMeetUp/securitywaveback/pca_models/pca_models_2024.07.06.pkl'
 
-pca1_dir = './pca_models/pcaTactic.pkl'
-pca2_dir = './pca_models/pcaTech.pkl'
-pca3_dir ='./pca_models/pcaObj.pkl'
-pca4_dir = './pca_models/pcaBehave.pkl'
-pca5_dir = './pca_models/pcaCapability.pkl'
+pca1_dir = r'/Users/skgus/irMeetUp/securitywaveback/pca_models/pcaTactic.pkl'
+pca2_dir = r'/Users/skgus/irMeetUp/securitywaveback/pca_models/pcaTech.pkl'
+pca3_dir = r'/Users/skgus/irMeetUp/securitywaveback/pca_models/pcaObj.pkl'
+pca4_dir = r'/Users/skgus/irMeetUp/securitywaveback/pca_models/pcaBehave.pkl'
+pca5_dir = r'/Users/skgus/irMeetUp/securitywaveback/pca_models/pcaCapability.pkl'
 
 
 #예측에 사용할 모델의 경로
-model_dir = './pca_models/model.pkl'
+model_dir = r'/Users/skgus/irMeetUp/securitywaveback/pca_models/model.pkl'
 
 
 #학습 데이터셋 열 - 모델 보낼 때 각 모델과 함께 이 값을 보내겠습니다.
@@ -498,4 +498,3 @@ result_int = model.predict(ftr_df)
 print('실수 예측값\n',result_float) #실수 예측값 : 순서대로, [ 정상코드일 확률   악성코드일 확률] (ex) [7.40462490e-02 9.25953751e-01] : 악성 92.59...%)
 print()
 print('정수 예측값\n', result_int) #정수 예측값 : 0 or 1 (0 : 정상, 1 : 악성)
-
