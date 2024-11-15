@@ -26,3 +26,5 @@ INFO:root:Time taken for capa analysis: 0:00:56.689575
 INFO:root:Time taken for preprocessing: 0:00:00.977920
 INFO:root:Time taken for AI model prediction: 0:00:00.001565
 INFO:werkzeug:127.0.0.1 - - [15/Nov/2024 20:28:35] "POST /upload HTTP/1.1" 200 -
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 325-848-442
