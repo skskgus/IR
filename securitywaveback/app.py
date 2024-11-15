@@ -19,6 +19,10 @@ import traceback
 from flask_cors import CORS
 import sys
 
+# matplotlib 로깅 레벨 설정 (DEBUG 메시지 무시)
+matplotlib_logger = logging.getLogger('matplotlib')
+matplotlib_logger.setLevel(logging.WARNING)  # DEBUG 대신 WARNING 이상의 메시지만 표시
+
 # 로깅 설정
 log_dir = r'/Users/skgus/irMeetUp/securitywaveback/logs'
 os.makedirs(log_dir, exist_ok=True)
@@ -87,7 +91,11 @@ def parse_capa_output(output):
 # capa 실행 함수
 def capa(file_path):
     try:
+        start_time = datetime.now()
         result = subprocess.run([capa_path, '-vv', file_path], capture_output=True, text=True, encoding='utf-8')
+        end_time = datetime.now()
+        logging.info(f"Time taken for capa analysis: {end_time - start_time}")
+
         if result.stdout:
             parsed_data = parse_capa_output(result.stdout)
             parsed_data['file_name'] = os.path.basename(file_path)
@@ -103,10 +111,13 @@ def capa(file_path):
 model_dir = r'/Users/skgus/irMeetUp/securitywaveback/pca_models/model.pkl'
 def model():
     model = joblib.load(f"{model_dir}")
-    
-    # CSV 파일을 전처리하여 로드
+
+    # 전처리 시간 측정
+    preprocess_start = datetime.now()
     subprocess.run([sys.executable, preprocess_path])
-    
+    preprocess_end = datetime.now()
+    logging.info(f"Time taken for preprocessing: {preprocess_end - preprocess_start}")
+
     # 전처리 후 데이터 프레임 로드
     df = pd.read_csv(output_csv_path)
 
@@ -116,8 +127,14 @@ def model():
         raise ValueError(f"CSV file has {df.shape[1]} columns, but model requires {model.n_features_in_} columns.")
     
     df['Entropy'] = pd.to_numeric(df['Entropy'], errors='coerce')
+
+    # 모델 예측 시간 측정
+    predict_start = datetime.now()
     result_float = model.predict_proba(df).flatten()
     result_int = model.predict(df)[0]
+    predict_end = datetime.now()
+    logging.info(f"Time taken for AI model prediction: {predict_end - predict_start}")
+
     return result_float[0], result_float[1], result_int
 
 # 그래프 생성 함수
