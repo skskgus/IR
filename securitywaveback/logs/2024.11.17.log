@@ -64,6 +64,7 @@ INFO:root:Time taken for capa analysis: 0:00:05.996517
 INFO:root:Time taken for preprocessing: 0:00:01.675936
 INFO:root:Time taken for AI model prediction: 0:00:00.065504
 INFO:werkzeug:127.0.0.1 - - [17/Nov/2024 00:29:22] "POST /upload HTTP/1.1" 200 -
+<<<<<<< HEAD
 INFO:root:Using capa path: C:\Kreze\IR\securitywaveback\capa.exe
 INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
@@ -213,3 +214,5 @@ INFO:root:Time taken for capa analysis: 0:00:06.430661
 INFO:root:Time taken for preprocessing: 0:00:01.833716
 INFO:root:Time taken for AI model prediction: 0:00:00.002505
 INFO:werkzeug:127.0.0.1 - - [17/Nov/2024 22:00:46] "POST /upload HTTP/1.1" 200 -
+=======
+>>>>>>> a608bc5bf2cb59d5325b7f9764373c8080597683

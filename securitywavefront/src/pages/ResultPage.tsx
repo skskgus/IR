@@ -51,6 +51,7 @@ const ResultPage: React.FC = () => {
           boxShadow: "0 4px 10px rgba(0, 0, 0, 0.5)",
         }}
       >
+<<<<<<< HEAD
         <h1 style={{ fontSize: "36px", marginBottom: "20px" }}>
           Analysis Result
         </h1>
@@ -61,6 +62,11 @@ const ResultPage: React.FC = () => {
             </p>
             <Result result={result} />
           </>
+=======
+        <h1 style={{ fontSize: "36px", marginBottom: "20px" }}>Analysis Result</h1>
+        {result ? (
+          <Result result={result} />
+>>>>>>> a608bc5bf2cb59d5325b7f9764373c8080597683
         ) : (
           <p style={{ fontSize: "18px" }}>No result available.</p>
         )}
