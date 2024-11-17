@@ -13,8 +13,12 @@ import joblib
 
 #---------바꿔야 하는 값---------#
 
-#입력 데이터셋 위치
-input_dir = r'/Users/skgus/irMeetUp/securitywaveback/outputs/outputs.csv'
+# 프로젝트 루트 경로
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# 입력 데이터셋 위치
+input_dir = os.path.join(BASE_DIR, 'outputs', 'outputs.csv')
+
 
 
 
@@ -171,18 +175,17 @@ col_checklist = ['file_name', 'Entropy', 'ATT&CK Tactic', 'ATT&CK Technique', 'M
                  'capability_pca8']
 
 #저장한 차원축소 모델 불러오기
-#load 뒤에 pca모델 경로/모델명 입력
-pca_models_dir = r'/Users/skgus/irMeetUp/securitywaveback/pca_models/pca_models_2024.07.06.pkl'
+# PCA 모델 경로
+pca_models_dir = os.path.join(BASE_DIR, 'pca_models', 'pca_models_2024.07.06.pkl')
 
-pca1_dir = r'/Users/skgus/irMeetUp/securitywaveback/pca_models/pcaTactic.pkl'
-pca2_dir = r'/Users/skgus/irMeetUp/securitywaveback/pca_models/pcaTech.pkl'
-pca3_dir = r'/Users/skgus/irMeetUp/securitywaveback/pca_models/pcaObj.pkl'
-pca4_dir = r'/Users/skgus/irMeetUp/securitywaveback/pca_models/pcaBehave.pkl'
-pca5_dir = r'/Users/skgus/irMeetUp/securitywaveback/pca_models/pcaCapability.pkl'
+pca1_dir = os.path.join(BASE_DIR, 'pca_models', 'pcaTactic.pkl')
+pca2_dir = os.path.join(BASE_DIR, 'pca_models', 'pcaTech.pkl')
+pca3_dir = os.path.join(BASE_DIR, 'pca_models', 'pcaObj.pkl')
+pca4_dir = os.path.join(BASE_DIR, 'pca_models', 'pcaBehave.pkl')
+pca5_dir = os.path.join(BASE_DIR, 'pca_models', 'pcaCapability.pkl')
 
-
-#예측에 사용할 모델의 경로
-model_dir = r'/Users/skgus/irMeetUp/securitywaveback/pca_models/model.pkl'
+# 예측에 사용할 모델의 경로
+model_dir = os.path.join(BASE_DIR, 'pca_models', 'model.pkl')
 
 
 #학습 데이터셋 열 - 모델 보낼 때 각 모델과 함께 이 값을 보내겠습니다.

@@ -1,0 +1,66 @@
+INFO:root:Using capa path: C:\Kreze\IR\securitywaveback\capa.exe
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 138-606-305
+INFO:root:Time taken for capa analysis: 0:00:06.396391
+INFO:root:Time taken for preprocessing: 0:00:01.440700
+ERROR:root:CSV file format does not match model features.
+ERROR:root:An error occurred during file upload: CSV file has 8 columns, but model requires 37 columns.
+ERROR:root:Traceback (most recent call last):
+  File "C:\Kreze\IR\securitywaveback\app.py", line 209, in upload_file
+    result_probs = model()
+                   ^^^^^^^
+  File "C:\Kreze\IR\securitywaveback\app.py", line 142, in model
+    raise ValueError(f"CSV file has {df.shape[1]} columns, but model requires {model.n_features_in_} columns.")
+ValueError: CSV file has 8 columns, but model requires 37 columns.
+
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2024 00:25:49] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO:root:Time taken for capa analysis: 0:00:19.031167
+INFO:root:Time taken for preprocessing: 0:00:01.271207
+ERROR:root:CSV file format does not match model features.
+ERROR:root:An error occurred during file upload: CSV file has 8 columns, but model requires 37 columns.
+ERROR:root:Traceback (most recent call last):
+  File "C:\Kreze\IR\securitywaveback\app.py", line 209, in upload_file
+    result_probs = model()
+                   ^^^^^^^
+  File "C:\Kreze\IR\securitywaveback\app.py", line 142, in model
+    raise ValueError(f"CSV file has {df.shape[1]} columns, but model requires {model.n_features_in_} columns.")
+ValueError: CSV file has 8 columns, but model requires 37 columns.
+
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2024 00:26:28] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO:root:Using capa path: C:\Kreze\IR\securitywaveback\capa.exe
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.2:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:root:Using capa path: C:\Kreze\IR\securitywaveback\capa.exe
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 138-606-305
+INFO:root:Time taken for capa analysis: 0:00:06.302740
+INFO:root:Time taken for preprocessing: 0:00:01.341185
+ERROR:root:CSV file format does not match model features.
+ERROR:root:An error occurred during file upload: CSV file has 8 columns, but model requires 37 columns.
+ERROR:root:Traceback (most recent call last):
+  File "C:\Kreze\IR\securitywaveback\app.py", line 209, in upload_file
+    result_probs = model()
+                   ^^^^^^^
+  File "C:\Kreze\IR\securitywaveback\app.py", line 142, in model
+    raise ValueError(f"CSV file has {df.shape[1]} columns, but model requires {model.n_features_in_} columns.")
+ValueError: CSV file has 8 columns, but model requires 37 columns.
+
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2024 00:26:57] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO:root:Using capa path: C:\Kreze\IR\securitywaveback\capa.exe
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.2:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:root:Using capa path: C:\Kreze\IR\securitywaveback\capa.exe
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 138-606-305
+INFO:root:Time taken for capa analysis: 0:00:05.996517
+INFO:root:Time taken for preprocessing: 0:00:01.675936
+INFO:root:Time taken for AI model prediction: 0:00:00.065504
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2024 00:29:22] "POST /upload HTTP/1.1" 200 -
