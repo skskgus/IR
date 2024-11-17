@@ -15,6 +15,7 @@ matplotlib.use('Agg')  # GUI 백엔드 대신 'Agg' 백엔드를 사용하여 �
 import matplotlib.pyplot as plt
 from io import BytesIO
 import base64
+import platform
 import traceback
 from flask_cors import CORS
 import sys
@@ -23,20 +24,34 @@ import sys
 matplotlib_logger = logging.getLogger('matplotlib')
 matplotlib_logger.setLevel(logging.WARNING)  # DEBUG 대신 WARNING 이상의 메시지만 표시
 
+# 프로젝트 루트 경로
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
 # 로깅 설정
-log_dir = r'/Users/skgus/irMeetUp/securitywaveback/logs'
+log_dir = os.path.join(BASE_DIR, 'logs')
 os.makedirs(log_dir, exist_ok=True)
 logging.basicConfig(filename=os.path.join(log_dir, datetime.today().strftime("%Y.%m.%d")+'.log'), level=logging.DEBUG)
 
 app = Flask(__name__)
 CORS(app, resources={r"/upload": {"origins": "http://localhost:3000"}})
 app.secret_key = os.urandom(64).hex()
-app.config['UPLOAD_FOLDER'] = r'/Users/skgus/irMeetUp/securitywaveback/uploads'
+app.config['UPLOAD_FOLDER'] = os.path.join(BASE_DIR, 'uploads')
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 
-capa_path = r'/Users/skgus/irMeetUp/securitywaveback/capa'
-output_csv_path = r'/Users/skgus/irMeetUp/securitywaveback/outputs/outputs.csv'
-preprocess_path = r'/Users/skgus/irMeetUp/securitywaveback/preprocessing.py'
+
+#맥버전인 경우 'capa'로 수정 윈도우버전이라면 'capa.exe'로 수정 아마 이건 똑같을듯 << 이건 수정함
+#capa_path = os.path.join(BASE_DIR, 'capa.exe')
+# 운영 체제에 따라 capa 실행 파일 경로 설정
+if platform.system() == 'Windows':
+    capa_path = os.path.join(BASE_DIR, 'capa.exe')
+else:
+    capa_path = os.path.join(BASE_DIR, 'capa')
+
+# 로깅으로 capa_path 확인
+logging.info(f"Using capa path: {capa_path}")
+
+output_csv_path = os.path.join(BASE_DIR, 'outputs', 'outputs.csv')
+preprocess_path = os.path.join(BASE_DIR, 'preprocessing.py')
 
 # 엔트로피 계산 함수
 def calculate_entropy(file_path):
@@ -108,7 +123,7 @@ def capa(file_path):
         return None
 
 # AI 모델 예측 함수
-model_dir = r'/Users/skgus/irMeetUp/securitywaveback/pca_models/model.pkl'
+model_dir = os.path.join(BASE_DIR, 'pca_models', 'model.pkl')
 def model():
     model = joblib.load(f"{model_dir}")
 
