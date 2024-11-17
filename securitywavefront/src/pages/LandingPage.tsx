@@ -15,8 +15,7 @@ const LandingPage: React.FC = () => {
       style={{
         position: "relative",
         height: "100vh",
-        backgroundColor: "#1a1a1a",
-        color: "#ffffff",
+        color: "var(--text-color)", // 텍스트 색상: CSS 변수 사용
       }}
     >
       {/* 상단 오른쪽에 Sign In, Log In 버튼 */}
@@ -34,9 +33,9 @@ const LandingPage: React.FC = () => {
             fontSize: "18px",
             padding: "8px 16px",
             backgroundColor: "#3a3a3a",
-            border: "1px solid #ffffff",
+            border: "1px solid var(--text-color)", // 테두리 색상
             borderRadius: "5px",
-            color: "#ffffff",
+            color: "var(--text-color)", // 버튼 텍스트 색상
             cursor: "pointer",
           }}
         >
@@ -47,9 +46,9 @@ const LandingPage: React.FC = () => {
             fontSize: "18px",
             padding: "8px 16px",
             backgroundColor: "#3a3a3a",
-            border: "1px solid #ffffff",
+            border: "1px solid var(--text-color)", // 테두리 색상
             borderRadius: "5px",
-            color: "#ffffff",
+            color: "var(--text-color)", // 버튼 텍스트 색상
             cursor: "pointer",
           }}
         >
@@ -65,7 +64,7 @@ const LandingPage: React.FC = () => {
           alignItems: "center",
           justifyContent: "center",
           height: "100%",
-          color: "#ffffff",
+          color: "var(--text-color)", // 텍스트 색상: CSS 변수 사용
         }}
       >
         <img
@@ -83,7 +82,7 @@ const LandingPage: React.FC = () => {
             width: "70%",
             maxWidth: "1000px",
             height: "2px",
-            backgroundColor: "#ffffff",
+            backgroundColor: "var(--text-color)", // 선 색상
             margin: "0 0 30px 0",
           }}
         ></div>
@@ -94,9 +93,9 @@ const LandingPage: React.FC = () => {
               fontSize: "36px",
               padding: "10px 20px",
               backgroundColor: "#3a3a3a",
-              border: "2px solid #ffffff",
+              border: "2px solid var(--text-color)", // 테두리 색상
               borderRadius: "5px",
-              color: "#ffffff",
+              color: "var(--text-color)", // 버튼 텍스트 색상
               cursor: "pointer",
             }}
           >
@@ -108,9 +107,9 @@ const LandingPage: React.FC = () => {
               fontSize: "36px",
               padding: "10px 20px",
               backgroundColor: "#3a3a3a",
-              border: "2px solid #ffffff",
+              border: "2px solid var(--text-color)", // 테두리 색상
               borderRadius: "5px",
-              color: "#ffffff",
+              color: "var(--text-color)", // 버튼 텍스트 색상
               cursor: "pointer",
             }}
           >
@@ -122,9 +121,9 @@ const LandingPage: React.FC = () => {
               fontSize: "36px",
               padding: "10px 20px",
               backgroundColor: "#3a3a3a",
-              border: "2px solid #ffffff",
+              border: "2px solid var(--text-color)", // 테두리 색상
               borderRadius: "5px",
-              color: "#ffffff",
+              color: "var(--text-color)", // 버튼 텍스트 색상
               cursor: "pointer",
             }}
           >
