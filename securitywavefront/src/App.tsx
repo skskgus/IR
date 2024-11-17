@@ -5,7 +5,6 @@ import UploadPage from "./pages/UploadPage";
 import ResultPage from "./pages/ResultPage";
 import Header from "./components/Header";
 import ThemeToggleButton from "./components/ThemeToggleButton"; // 테마 버튼 임포트
-import ResultPage from "./pages/ResultPage";
 import Register from "./pages/Register"; //추가
 import Login from "./pages/Login"; //추가
 
