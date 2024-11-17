@@ -6,12 +6,19 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: var(--background-color);
-  color: var(--text-color);
-  transition: background-color 0.3s, color 0.3s;
+  background-color: var(--background-color); /* CSS 변수 사용 */
+  color: var(--text-color); /* CSS 변수 사용 */
+  transition: background-color 0.3s, color 0.3s; /* 부드러운 전환 효과 */
 }
 
+/* 다크 모드 */
 body.dark-mode {
-  --background-color: #1a1a1a; /* 다크 모드 */
-  --text-color: #ffffff;
+  --background-color: #1a1a1a; /* 다크 모드 배경색 */
+  --text-color: #ffffff; /* 다크 모드 텍스트 색상 */
+}
+
+/* 라이트 모드 (기본값) */
+body.light-mode {
+  --background-color: #ffffff; /* 라이트 모드 배경색 */
+  --text-color: #000000; /* 라이트 모드 텍스트 색상 */
 }

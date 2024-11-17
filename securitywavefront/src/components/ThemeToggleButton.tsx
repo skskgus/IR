@@ -1,12 +1,27 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const ThemeToggleButton: React.FC = () => {
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  // 초기값을 localStorage에서 가져오거나 기본값 라이트 모드로 설정
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    const savedMode = localStorage.getItem("theme");
+    return savedMode === "dark"; // 기본값 라이트모드
+  });
+
+  useEffect(() => {
+    // 화면 모드 설정
+    if (isDarkMode) {
+      document.body.classList.add("dark-mode");
+      document.body.classList.remove("light-mode");
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.body.classList.add("light-mode");
+      document.body.classList.remove("dark-mode");
+      localStorage.setItem("theme", "light");
+    }
+  }, [isDarkMode]);
 
   const toggleTheme = () => {
-    setIsDarkMode(!isDarkMode);
-    // Body에 테마 클래스 추가
-    document.body.className = isDarkMode ? "light-mode" : "dark-mode";
+    setIsDarkMode((prevMode) => !prevMode);
   };
 
   return (

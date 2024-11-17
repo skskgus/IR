@@ -73,3 +73,29 @@ INFO:werkzeug:[33mPress CTRL+C to quit[0m
 INFO:werkzeug: * Restarting with stat
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 325-848-442
+INFO:root:Using capa path: /Users/skgus/irMeetUp/securitywaveback/capa
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.45.202:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:root:Using capa path: /Users/skgus/irMeetUp/securitywaveback/capa
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 325-848-442
+INFO:root:Using capa path: /Users/skgus/irMeetUp/securitywaveback/capa
+INFO:root:Time taken for capa analysis: 0:01:04.903335
+INFO:root:Time taken for preprocessing: 0:00:01.074207
+INFO:root:Time taken for AI model prediction: 0:00:00.005136
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2024 14:36:43] "POST /upload HTTP/1.1" 200 -
+INFO:root:Using capa path: /Users/skgus/irMeetUp/securitywaveback/capa
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.45.202:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:root:Using capa path: /Users/skgus/irMeetUp/securitywaveback/capa
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 325-848-442
+INFO:root:Using capa path: /Users/skgus/irMeetUp/securitywaveback/capa
