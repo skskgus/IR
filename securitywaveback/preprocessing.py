@@ -498,6 +498,18 @@ model = joblib.load(f"{model_dir}") #첫번째 인자를 저장한 '모델경로
 result_float = model.predict_proba(ftr_df)
 result_int = model.predict(ftr_df)
 
+# malicious한 결과에 대한 추가 정보 생성
+malicious_indices = [i for i, val in enumerate(result_int) if val == 1]  # malicious 예측 인덱스
+malicious_tactics = []
+
+if malicious_indices:
+    for idx in malicious_indices:
+        tactics = [col.replace("ATT_Tactic_", "") for col in ATT_Tactic_col if ftr_df.loc[idx, col] == 1]
+        malicious_tactics.append({"index": idx, "tactics": tactics})
+
+# malicious_tactics는 [{'index': 0, 'tactics': ['Execution', 'Privilege Escalation']}, ...] 형태
+print("Malicious Tactics:", malicious_tactics)
+
 print('실수 예측값\n',result_float) #실수 예측값 : 순서대로, [ 정상코드일 확률   악성코드일 확률] (ex) [7.40462490e-02 9.25953751e-01] : 악성 92.59...%)
 print()
 print('정수 예측값\n', result_int) #정수 예측값 : 0 or 1 (0 : 정상, 1 : 악성)

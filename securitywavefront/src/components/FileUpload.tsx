@@ -1,8 +1,7 @@
-// src/components/FileUpload.tsx
 import React, { useState } from "react";
 
 interface FileUploadProps {
-  setResult: (data: any) => void;
+  setResult: (data: any, fileName: string) => void;
 }
 
 const FileUpload: React.FC<FileUploadProps> = ({ setResult }) => {
@@ -17,7 +16,8 @@ const FileUpload: React.FC<FileUploadProps> = ({ setResult }) => {
     const formData = new FormData();
     const fileInput = document.getElementById("fileInput") as HTMLInputElement;
     if (fileInput?.files?.[0]) {
-      formData.append("file", fileInput.files[0]);
+      const file = fileInput.files[0];
+      formData.append("file", file);
 
       try {
         const response = await fetch("http://localhost:5000/upload", {
@@ -31,7 +31,7 @@ const FileUpload: React.FC<FileUploadProps> = ({ setResult }) => {
 
         const result = await response.json();
         setLoading(false); // 로딩 완료
-        setResult(result); // 결과 설정
+        setResult(result, file.name); // 결과와 파일 이름 전달
       } catch (error) {
         setLoading(false);
         console.error("Error uploading file:", error);

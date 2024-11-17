@@ -6,9 +6,9 @@ import logo from "../Landinglogo.png"; // 이미지 파일의 위치에 맞게 �
 const UploadPage: React.FC = () => {
   const navigate = useNavigate();
 
-  // 업로드된 결과를 받아와 결과 페이지로 이동하는 함수
-  const handleResult = (data: any) => {
-    navigate("/result", { state: { result: data } });
+  // 업로드된 결과와 파일 이름을 받아 결과 페이지로 이동하는 함수
+  const handleResult = (data: any, fileName: string) => {
+    navigate("/result", { state: { result: data, fileName } });
   };
 
   return (

@@ -99,3 +99,155 @@ INFO:root:Using capa path: /Users/skgus/irMeetUp/securitywaveback/capa
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 325-848-442
 INFO:root:Using capa path: /Users/skgus/irMeetUp/securitywaveback/capa
+<<<<<<< HEAD
+INFO:root:Using capa path: C:\Kreze\IR\securitywaveback\capa.exe
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.2:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:root:Using capa path: C:\Kreze\IR\securitywaveback\capa.exe
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 138-606-305
+INFO:root:Time taken for capa analysis: 0:00:19.333436
+INFO:root:Time taken for preprocessing: 0:00:01.644872
+INFO:root:Time taken for AI model prediction: 0:00:00.054712
+ERROR:root:An error occurred during file upload: [WinError 32] �ٸ� ���μ����� ������ ��� ���̱� ������ ���μ����� �׼��� �� �� �����ϴ�: 'C:\\Kreze\\IR\\securitywaveback\\uploads\\dbgcore.dll'
+ERROR:root:Traceback (most recent call last):
+  File "C:\Kreze\IR\securitywaveback\app.py", line 213, in upload_file
+    os.remove(file_path)
+PermissionError: [WinError 32] �ٸ� ���μ����� ������ ��� ���̱� ������ ���μ����� �׼��� �� �� �����ϴ�: 'C:\\Kreze\\IR\\securitywaveback\\uploads\\dbgcore.dll'
+
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2024 15:18:53] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO:root:Time taken for capa analysis: 0:00:05.727067
+INFO:root:Time taken for preprocessing: 0:00:01.620112
+INFO:root:Time taken for AI model prediction: 0:00:00.002008
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2024 15:20:19] "POST /upload HTTP/1.1" 200 -
+INFO:root:Using capa path: C:\Kreze\IR\securitywaveback\capa.exe
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.2:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:root:Using capa path: C:\Kreze\IR\securitywaveback\capa.exe
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 138-606-305
+INFO:root:Time taken for capa analysis: 0:00:05.984694
+INFO:root:Time taken for preprocessing: 0:00:01.620030
+INFO:root:Time taken for AI model prediction: 0:00:00.056249
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2024 19:41:30] "POST /upload HTTP/1.1" 200 -
+INFO:root:Time taken for capa analysis: 0:01:06.504622
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2024 19:42:48] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO:root:Time taken for capa analysis: 0:00:05.452092
+INFO:root:Time taken for preprocessing: 0:00:01.557744
+INFO:root:Time taken for AI model prediction: 0:00:00.001998
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2024 19:46:17] "POST /upload HTTP/1.1" 200 -
+INFO:root:Time taken for capa analysis: 0:00:05.652130
+INFO:root:Time taken for preprocessing: 0:00:01.467275
+INFO:root:Time taken for AI model prediction: 0:00:00.001999
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2024 19:55:41] "POST /upload HTTP/1.1" 200 -
+INFO:root:Time taken for capa analysis: 0:00:05.459880
+INFO:root:Time taken for preprocessing: 0:00:01.495977
+INFO:root:Time taken for AI model prediction: 0:00:00.001001
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2024 19:56:04] "POST /upload HTTP/1.1" 200 -
+INFO:root:Time taken for capa analysis: 0:00:05.767022
+INFO:root:Time taken for preprocessing: 0:00:01.613937
+INFO:root:Time taken for AI model prediction: 0:00:00.001510
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2024 19:57:23] "POST /upload HTTP/1.1" 200 -
+INFO:root:Using capa path: C:\Kreze\IR\securitywaveback\capa.exe
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.2:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:root:Using capa path: C:\Kreze\IR\securitywaveback\capa.exe
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 138-606-305
+INFO:root:Time taken for capa analysis: 0:00:06.194410
+INFO:root:Time taken for preprocessing: 0:00:01.604308
+INFO:root:Time taken for AI model prediction: 0:00:00.056823
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2024 21:42:51] "POST /upload HTTP/1.1" 200 -
+INFO:root:Time taken for capa analysis: 0:00:05.537843
+INFO:root:Time taken for preprocessing: 0:00:01.564916
+INFO:root:Time taken for AI model prediction: 0:00:00.002999
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2024 21:43:07] "POST /upload HTTP/1.1" 200 -
+INFO:root:Using capa path: C:\Kreze\IR\securitywaveback\capa.exe
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.2:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:root:Using capa path: C:\Kreze\IR\securitywaveback\capa.exe
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 138-606-305
+INFO:root:Time taken for capa analysis: 0:00:05.572496
+INFO:root:Time taken for preprocessing: 0:00:01.584048
+INFO:root:Time taken for AI model prediction: 0:00:00.059257
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2024 21:43:54] "POST /upload HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Kreze\\IR\\securitywaveback\\preprocessing.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Using capa path: C:\Kreze\IR\securitywaveback\capa.exe
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 138-606-305
+INFO:werkzeug: * Detected change in 'C:\\Kreze\\IR\\securitywaveback\\preprocessing.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Using capa path: C:\Kreze\IR\securitywaveback\capa.exe
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 138-606-305
+INFO:werkzeug: * Detected change in 'C:\\Kreze\\IR\\securitywaveback\\preprocessing.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Using capa path: C:\Kreze\IR\securitywaveback\capa.exe
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 138-606-305
+INFO:root:Time taken for capa analysis: 0:00:05.557578
+INFO:root:Time taken for preprocessing: 0:00:01.572560
+INFO:root:Time taken for AI model prediction: 0:00:00.069956
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2024 21:48:39] "POST /upload HTTP/1.1" 200 -
+INFO:root:Time taken for capa analysis: 0:00:05.777207
+INFO:root:Time taken for preprocessing: 0:00:01.538127
+INFO:root:Time taken for AI model prediction: 0:00:00.002504
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2024 21:49:21] "POST /upload HTTP/1.1" 200 -
+INFO:root:Time taken for capa analysis: 0:00:05.574731
+INFO:root:Time taken for preprocessing: 0:00:01.536547
+INFO:root:Time taken for AI model prediction: 0:00:00.002006
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2024 21:50:34] "POST /upload HTTP/1.1" 200 -
+INFO:root:Time taken for capa analysis: 0:00:05.758881
+INFO:root:Time taken for preprocessing: 0:00:01.565155
+INFO:root:Time taken for AI model prediction: 0:00:00.002001
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2024 21:51:08] "POST /upload HTTP/1.1" 200 -
+INFO:root:Time taken for capa analysis: 0:00:05.730257
+INFO:root:Time taken for preprocessing: 0:00:01.569681
+INFO:root:Time taken for AI model prediction: 0:00:00.002264
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2024 21:51:36] "POST /upload HTTP/1.1" 200 -
+INFO:root:Time taken for capa analysis: 0:00:05.663369
+INFO:root:Time taken for preprocessing: 0:00:01.520169
+INFO:root:Time taken for AI model prediction: 0:00:00.002001
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2024 21:53:33] "POST /upload HTTP/1.1" 200 -
+INFO:root:Time taken for capa analysis: 0:00:05.661861
+INFO:root:Time taken for preprocessing: 0:00:01.577169
+INFO:root:Time taken for AI model prediction: 0:00:00.001001
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2024 21:54:00] "POST /upload HTTP/1.1" 200 -
+INFO:root:Using capa path: C:\Kreze\IR\securitywaveback\capa.exe
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.2:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:root:Using capa path: C:\Kreze\IR\securitywaveback\capa.exe
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 138-606-305
+INFO:root:Time taken for capa analysis: 0:00:06.732965
+INFO:root:Time taken for preprocessing: 0:00:01.844887
+INFO:root:Time taken for AI model prediction: 0:00:00.069441
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2024 22:00:29] "POST /upload HTTP/1.1" 200 -
+INFO:root:Time taken for capa analysis: 0:00:06.430661
+INFO:root:Time taken for preprocessing: 0:00:01.833716
+INFO:root:Time taken for AI model prediction: 0:00:00.002505
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2024 22:00:46] "POST /upload HTTP/1.1" 200 -
+=======
+>>>>>>> a608bc5bf2cb59d5325b7f9764373c8080597683
