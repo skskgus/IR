@@ -1,6 +1,316 @@
 INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.2:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 138-606-305
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.2:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 138-606-305
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.2:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 138-606-305
+INFO:root:Time taken for capa analysis: 0:00:06.257940
+INFO:root:Time taken for preprocessing: 0:00:01.713022
+INFO:root:Time taken for AI model prediction: 0:00:00.057674
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2024 01:50:34] "POST /upload HTTP/1.1" 200 -
+INFO:root:Time taken for capa analysis: 0:00:06.149161
+INFO:root:Time taken for preprocessing: 0:00:01.713526
+INFO:root:Time taken for AI model prediction: 0:00:00.001999
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2024 01:51:27] "POST /upload HTTP/1.1" 200 -
+INFO:root:Time taken for capa analysis: 0:00:06.034328
+INFO:root:Time taken for preprocessing: 0:00:01.664918
+INFO:root:Time taken for AI model prediction: 0:00:00.002999
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2024 01:53:00] "POST /upload HTTP/1.1" 200 -
+INFO:root:Time taken for capa analysis: 0:00:06.179215
+INFO:root:Time taken for preprocessing: 0:00:01.723340
+INFO:root:Time taken for AI model prediction: 0:00:00.002000
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2024 01:53:13] "POST /upload HTTP/1.1" 200 -
+INFO:root:Time taken for capa analysis: 0:00:06.102799
+INFO:root:Time taken for preprocessing: 0:00:01.781041
+INFO:root:Time taken for AI model prediction: 0:00:00.002516
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2024 01:54:38] "POST /upload HTTP/1.1" 200 -
+INFO:root:Time taken for capa analysis: 0:00:05.828619
+INFO:root:Time taken for preprocessing: 0:00:01.623061
+INFO:root:Time taken for AI model prediction: 0:00:00.002504
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2024 01:58:34] "POST /upload HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.2:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 138-606-305
+INFO:root:Time taken for capa analysis: 0:00:06.242049
+INFO:root:Time taken for preprocessing: 0:00:02.201073
+INFO:root:Time taken for AI model prediction: 0:00:00.068211
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2024 10:19:55] "POST /upload HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.2:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 138-606-305
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.2:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 138-606-305
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.2:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 138-606-305
+INFO:root:Time taken for capa analysis: 0:00:05.873919
+INFO:root:Time taken for preprocessing: 0:00:05.129607
+INFO:root:Time taken for AI model prediction: 0:00:00.048384
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2024 11:05:14] "POST /upload HTTP/1.1" 200 -
+INFO:root:Time taken for capa analysis: 0:00:05.490816
+INFO:root:Time taken for preprocessing: 0:00:01.477320
+INFO:root:Time taken for AI model prediction: 0:00:00.003000
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2024 11:14:06] "POST /upload HTTP/1.1" 200 -
+INFO:root:Time taken for capa analysis: 0:00:05.437817
+INFO:root:Time taken for preprocessing: 0:00:01.482107
+INFO:root:Time taken for AI model prediction: 0:00:00.002000
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2024 11:15:34] "POST /upload HTTP/1.1" 200 -
+INFO:root:Time taken for capa analysis: 0:00:05.455887
+INFO:root:Time taken for preprocessing: 0:00:01.476232
+INFO:root:Time taken for AI model prediction: 0:00:00.002000
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2024 11:16:39] "POST /upload HTTP/1.1" 200 -
+INFO:root:Time taken for capa analysis: 0:00:05.356710
+INFO:root:Time taken for preprocessing: 0:00:01.467891
+INFO:root:Time taken for AI model prediction: 0:00:00.001999
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2024 11:18:47] "POST /upload HTTP/1.1" 200 -
+INFO:root:Time taken for capa analysis: 0:00:05.362696
+INFO:root:Time taken for preprocessing: 0:00:01.465240
+INFO:root:Time taken for AI model prediction: 0:00:00.001998
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2024 11:19:08] "POST /upload HTTP/1.1" 200 -
+INFO:root:Time taken for capa analysis: 0:00:05.383988
+INFO:root:Time taken for preprocessing: 0:00:01.489394
+INFO:root:Time taken for AI model prediction: 0:00:00.001998
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2024 11:22:11] "POST /upload HTTP/1.1" 200 -
+INFO:root:Time taken for capa analysis: 0:00:05.542130
+INFO:root:Time taken for preprocessing: 0:00:01.556518
+INFO:root:Time taken for AI model prediction: 0:00:00.002000
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2024 11:24:38] "POST /upload HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Kreze\\IR\\securitywaveback\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 138-606-305
+INFO:werkzeug: * Detected change in 'C:\\Kreze\\IR\\securitywaveback\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Using capa path: C:\Kreze\IR\securitywaveback\capa.exe
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 138-606-305
+INFO:werkzeug: * Detected change in 'C:\\Kreze\\IR\\securitywaveback\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Using capa path: C:\Kreze\IR\securitywaveback\capa.exe
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 138-606-305
+INFO:root:Time taken for capa analysis: 0:00:05.761931
+INFO:root:Time taken for preprocessing: 0:00:01.531365
+INFO:root:Time taken for AI model prediction: 0:00:00.054647
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2024 11:27:14] "POST /upload HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Kreze\\IR\\securitywaveback\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Using capa path: C:\Kreze\IR\securitywaveback\capa.exe
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 138-606-305
+INFO:root:Using capa path: C:\Kreze\IR\securitywaveback\capa.exe
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.2:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:root:Using capa path: C:\Kreze\IR\securitywaveback\capa.exe
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 138-606-305
+INFO:root:Time taken for capa analysis: 0:00:05.997439
+INFO:root:Time taken for preprocessing: 0:00:01.926582
+INFO:root:Time taken for AI model prediction: 0:00:00.051431
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2024 19:54:57] "POST /upload HTTP/1.1" 200 -
+INFO:root:Using capa path: C:\Kreze\IR\securitywaveback\capa.exe
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.2:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:root:Using capa path: C:\Kreze\IR\securitywaveback\capa.exe
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 138-606-305
+INFO:root:Time taken for capa analysis: 0:00:07.130892
+INFO:root:Time taken for preprocessing: 0:00:02.514223
+INFO:root:Time taken for AI model prediction: 0:00:00.065966
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2024 23:43:18] "POST /upload HTTP/1.1" 200 -
+INFO:root:Time taken for capa analysis: 0:00:06.124961
+INFO:root:Time taken for preprocessing: 0:00:01.749088
+INFO:root:Time taken for AI model prediction: 0:00:00.002000
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2024 23:56:23] "POST /upload HTTP/1.1" 200 -
+INFO:root:Time taken for capa analysis: 0:00:06.326454
+INFO:root:Time taken for preprocessing: 0:00:01.655168
+INFO:root:Time taken for AI model prediction: 0:00:00.002001
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2024 23:57:08] "POST /upload HTTP/1.1" 200 -
+INFO:root:Time taken for capa analysis: 0:00:06.158704
+INFO:root:Time taken for preprocessing: 0:00:01.658853
+INFO:root:Time taken for AI model prediction: 0:00:00.002003
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2024 23:59:01] "POST /upload HTTP/1.1" 200 -
+INFO:root:Time taken for capa analysis: 0:00:09.055408
+INFO:root:Time taken for preprocessing: 0:00:01.746502
+INFO:root:Time taken for AI model prediction: 0:00:00.002002
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2024 23:59:36] "POST /upload HTTP/1.1" 200 -
+INFO:root:Time taken for capa analysis: 0:00:02.650054
+INFO:root:Time taken for preprocessing: 0:00:01.714720
+INFO:root:Time taken for AI model prediction: 0:00:00.001998
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2024 00:00:10] "POST /upload HTTP/1.1" 200 -
+INFO:root:Time taken for capa analysis: 0:01:44.979903
+INFO:root:Time taken for preprocessing: 0:00:01.812023
+INFO:root:Time taken for AI model prediction: 0:00:00.002000
+ERROR:root:An error occurred during file upload: [WinError 32] �ٸ� ���μ����� ������ ��� ���̱� ������ ���μ����� �׼��� �� �� �����ϴ�: 'C:\\Kreze\\IR\\securitywaveback\\uploads\\dlltool.exe'
+ERROR:root:Traceback (most recent call last):
+  File "C:\Kreze\IR\securitywaveback\app.py", line 213, in upload_file
+    os.remove(file_path)
+PermissionError: [WinError 32] �ٸ� ���μ����� ������ ��� ���̱� ������ ���μ����� �׼��� �� �� �����ϴ�: 'C:\\Kreze\\IR\\securitywaveback\\uploads\\dlltool.exe'
+
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2024 00:02:09] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+ERROR:root:An error occurred during file upload: [Errno 22] Invalid argument: 'C:\\Kreze\\IR\\securitywaveback\\uploads\\19848fc4444a79159ef2a7b8b7221fe58700736d67c27ca84eb43d79831ef448'
+ERROR:root:Traceback (most recent call last):
+  File "C:\Kreze\IR\securitywaveback\app.py", line 194, in upload_file
+    file.save(file_path)
+  File "C:\Users\ksh99\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\werkzeug\datastructures\file_storage.py", line 129, in save
+    dst = open(dst, "wb")
+          ^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'C:\\Kreze\\IR\\securitywaveback\\uploads\\19848fc4444a79159ef2a7b8b7221fe58700736d67c27ca84eb43d79831ef448'
+
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2024 00:04:36] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+ERROR:root:An error occurred during file upload: [Errno 22] Invalid argument: 'C:\\Kreze\\IR\\securitywaveback\\uploads\\19848fc4444a79159ef2a7b8b7221fe58700736d67c27ca84eb43d79831ef448'
+ERROR:root:Traceback (most recent call last):
+  File "C:\Kreze\IR\securitywaveback\app.py", line 194, in upload_file
+    file.save(file_path)
+  File "C:\Users\ksh99\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\werkzeug\datastructures\file_storage.py", line 129, in save
+    dst = open(dst, "wb")
+          ^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'C:\\Kreze\\IR\\securitywaveback\\uploads\\19848fc4444a79159ef2a7b8b7221fe58700736d67c27ca84eb43d79831ef448'
+
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2024 00:04:36] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+ERROR:root:An error occurred during file upload: [Errno 22] Invalid argument: 'C:\\Kreze\\IR\\securitywaveback\\uploads\\19848fc4444a79159ef2a7b8b7221fe58700736d67c27ca84eb43d79831ef448'
+ERROR:root:Traceback (most recent call last):
+  File "C:\Kreze\IR\securitywaveback\app.py", line 194, in upload_file
+    file.save(file_path)
+  File "C:\Users\ksh99\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\werkzeug\datastructures\file_storage.py", line 129, in save
+    dst = open(dst, "wb")
+          ^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'C:\\Kreze\\IR\\securitywaveback\\uploads\\19848fc4444a79159ef2a7b8b7221fe58700736d67c27ca84eb43d79831ef448'
+
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2024 00:04:36] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+ERROR:root:An error occurred during file upload: [Errno 22] Invalid argument: 'C:\\Kreze\\IR\\securitywaveback\\uploads\\19848fc4444a79159ef2a7b8b7221fe58700736d67c27ca84eb43d79831ef448'
+ERROR:root:Traceback (most recent call last):
+  File "C:\Kreze\IR\securitywaveback\app.py", line 194, in upload_file
+    file.save(file_path)
+  File "C:\Users\ksh99\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\werkzeug\datastructures\file_storage.py", line 129, in save
+    dst = open(dst, "wb")
+          ^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'C:\\Kreze\\IR\\securitywaveback\\uploads\\19848fc4444a79159ef2a7b8b7221fe58700736d67c27ca84eb43d79831ef448'
+
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2024 00:04:37] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+ERROR:root:An error occurred during file upload: [Errno 22] Invalid argument: 'C:\\Kreze\\IR\\securitywaveback\\uploads\\19848fc4444a79159ef2a7b8b7221fe58700736d67c27ca84eb43d79831ef448'
+ERROR:root:Traceback (most recent call last):
+  File "C:\Kreze\IR\securitywaveback\app.py", line 194, in upload_file
+    file.save(file_path)
+  File "C:\Users\ksh99\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\werkzeug\datastructures\file_storage.py", line 129, in save
+    dst = open(dst, "wb")
+          ^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'C:\\Kreze\\IR\\securitywaveback\\uploads\\19848fc4444a79159ef2a7b8b7221fe58700736d67c27ca84eb43d79831ef448'
+
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2024 00:04:41] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO:root:Time taken for capa analysis: 0:00:07.910045
+INFO:root:Time taken for capa analysis: 0:00:07.494310
+INFO:root:Time taken for preprocessing: 0:00:02.031270
+INFO:root:Time taken for AI model prediction: 0:00:00.005086
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2024 00:04:44] "POST /upload HTTP/1.1" 200 -
+INFO:root:Time taken for preprocessing: 0:00:01.800864
+INFO:root:Time taken for AI model prediction: 0:00:00.003514
+ERROR:root:An error occurred during file upload: [WinError 2] ������ ������ ã�� �� �����ϴ�: 'C:\\Kreze\\IR\\securitywaveback\\uploads\\19848fc4444a79159ef2a7b8b7221fe58700736d67c27ca84eb43d79831ef448'
+ERROR:root:Traceback (most recent call last):
+  File "C:\Kreze\IR\securitywaveback\app.py", line 213, in upload_file
+    os.remove(file_path)
+FileNotFoundError: [WinError 2] ������ ������ ã�� �� �����ϴ�: 'C:\\Kreze\\IR\\securitywaveback\\uploads\\19848fc4444a79159ef2a7b8b7221fe58700736d67c27ca84eb43d79831ef448'
+
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2024 00:04:45] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO:root:Time taken for capa analysis: 0:00:06.497817
+INFO:root:Time taken for preprocessing: 0:00:01.912748
+INFO:root:Time taken for AI model prediction: 0:00:00.003333
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2024 00:05:28] "POST /upload HTTP/1.1" 200 -
+INFO:root:Time taken for capa analysis: 0:03:15.796115
+INFO:root:Time taken for preprocessing: 0:00:01.564630
+ERROR:root:An error occurred during file upload: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: ATT_Tech_pca1: object, ATT_Tech_pca2: object, ATT_Tech_pca3: object, ATT_Tech_pca4: object, ATT_Tech_pca5: object, ATT_Tech_pca6: object, ATT_Tactic_pca1: object
+ERROR:root:Traceback (most recent call last):
+  File "C:\Kreze\IR\securitywaveback\app.py", line 209, in upload_file
+    result_probs = model()
+                   ^^^^^^^
+  File "C:\Kreze\IR\securitywaveback\app.py", line 148, in model
+    result_float = model.predict_proba(df).flatten()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksh99\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\lightgbm\sklearn.py", line 1351, in predict_proba
+    result = super().predict(
+             ^^^^^^^^^^^^^^^^
+  File "C:\Users\ksh99\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\lightgbm\sklearn.py", line 1036, in predict
+    return self._Booster.predict(  # type: ignore[union-attr]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksh99\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\lightgbm\basic.py", line 4748, in predict
+    return predictor.predict(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksh99\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\lightgbm\basic.py", line 1139, in predict
+    data = _data_from_pandas(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksh99\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\lightgbm\basic.py", line 848, in _data_from_pandas
+    _pandas_to_numpy(data, target_dtype=target_dtype),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksh99\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\lightgbm\basic.py", line 794, in _pandas_to_numpy
+    _check_for_bad_pandas_dtypes(data.dtypes)
+  File "C:\Users\ksh99\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\lightgbm\basic.py", line 784, in _check_for_bad_pandas_dtypes
+    raise ValueError(
+ValueError: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: ATT_Tech_pca1: object, ATT_Tech_pca2: object, ATT_Tech_pca3: object, ATT_Tech_pca4: object, ATT_Tech_pca5: object, ATT_Tech_pca6: object, ATT_Tactic_pca1: object
+
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2024 00:05:50] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO:root:Time taken for capa analysis: 0:00:06.031996
+INFO:root:Time taken for preprocessing: 0:00:01.654432
+INFO:root:Time taken for AI model prediction: 0:00:00.002504
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2024 00:07:04] "POST /upload HTTP/1.1" 200 -
+INFO:root:Time taken for capa analysis: 0:00:06.119765
+INFO:root:Time taken for preprocessing: 0:00:01.764355
+INFO:root:Time taken for AI model prediction: 0:00:00.002997
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2024 00:07:44] "POST /upload HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Kreze\\IR\\securitywaveback\\preprocessing.py', reloading
+INFO:werkzeug: * Restarting with stat
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
  * Running on http://192.168.45.202:5000
 INFO:werkzeug:[33mPress CTRL+C to quit[0m
 INFO:werkzeug: * Restarting with stat

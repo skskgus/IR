@@ -6,8 +6,8 @@ import logo from "../Landinglogo.png"; // 이미지 파일의 위치에 맞게 �
 const LandingPage: React.FC = () => {
   const navigate = useNavigate();
 
-  const handleButtonClick = () => {
-    navigate("/upload");
+  const handleButtonClick = (path: string) => {
+    navigate(path);
   };
 
   return (
@@ -18,6 +18,7 @@ const LandingPage: React.FC = () => {
         color: "var(--text-color)", // 텍스트 색상: CSS 변수 사용
       }}
     >
+
       {/* 상단 오른쪽에 Sign In, Log In 버튼 */}
       <div
         style={{
@@ -29,6 +30,7 @@ const LandingPage: React.FC = () => {
         }}
       >
         <button
+          onClick={() => handleButtonClick("/register")}
           style={{
             fontSize: "18px",
             padding: "8px 16px",
@@ -39,9 +41,10 @@ const LandingPage: React.FC = () => {
             cursor: "pointer",
           }}
         >
-          Sign In
+          Register
         </button>
         <button
+          onClick={() => handleButtonClick("/login")}
           style={{
             fontSize: "18px",
             padding: "8px 16px",
@@ -52,7 +55,7 @@ const LandingPage: React.FC = () => {
             cursor: "pointer",
           }}
         >
-          Log In
+          Login
         </button>
       </div>
 
@@ -88,7 +91,7 @@ const LandingPage: React.FC = () => {
         ></div>
         <div style={{ display: "flex", gap: "20px", marginTop: "20px" }}>
           <button
-            onClick={handleButtonClick}
+            onClick={() => handleButtonClick("/upload")}
             style={{
               fontSize: "36px",
               padding: "10px 20px",
@@ -102,7 +105,7 @@ const LandingPage: React.FC = () => {
             Detecting
           </button>
           <button
-            onClick={handleButtonClick}
+            onClick={() => handleButtonClick("/Mining")}
             style={{
               fontSize: "36px",
               padding: "10px 20px",
@@ -116,7 +119,7 @@ const LandingPage: React.FC = () => {
             Mining
           </button>
           <button
-            onClick={handleButtonClick}
+            onClick={() => handleButtonClick("/Dao")}
             style={{
               fontSize: "36px",
               padding: "10px 20px",
