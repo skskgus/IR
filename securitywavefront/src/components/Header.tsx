@@ -1,7 +1,19 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import logo from "../Landinglogo.png"; // 로고 이미지 경로 수정
 
 const Header: React.FC = () => {
+  const navigate = useNavigate();
+
+  const handleLogoClick = () => {
+    navigate("/"); // "/" 경로로 이동
+  };
+
+  const handleDevelopersClick = () => {
+    console.log("For Developers clicked!");
+    navigate("/upload"); // "/upload" 경로로 이동
+  };
+
   return (
     <div
       style={{
@@ -13,89 +25,98 @@ const Header: React.FC = () => {
         color: "var(--text-color)", // 텍스트 색상
         display: "flex",
         alignItems: "center",
-        justifyContent: "space-between", // 요소 간 균등 분배
-        padding: "20px 30px", // 오른쪽 패딩을 줄임
+        justifyContent: "space-between",
+        padding: "20px 30px", // 세로 길이 조정 (1.5배로 증가)
         boxShadow: "0 4px 10px rgba(0, 0, 0, 0.5)",
         zIndex: 1000,
-        transition: "background-color 0.3s, color 0.3s", // 부드러운 전환 효과
-        boxSizing: "border-box", // 박스 모델 계산 문제 방지
+        boxSizing: "border-box", // 패딩 포함 박스 크기 계산
       }}
     >
-      {/* Detecting과 로고 */}
-      <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
-        <img
-          src={logo}
-          alt="Logo"
-          style={{ height: "50px", cursor: "pointer" }}
-        />
-        <span style={{ fontSize: "20px", fontWeight: "bold" }}>
-          SECURITY WAVE
-        </span>
-      </div>
-
-      {/* 네비게이션 링크 */}
+      {/* 로고와 SECURITY WAVE */}
       <div
         style={{
           display: "flex",
           alignItems: "center",
-          gap: "80px", // 간격 두 배로 증가
+          gap: "20px",
+          cursor: "pointer",
         }}
+        onClick={handleLogoClick}
       >
-        <a
-          href="#detecting"
+        <img src={logo} alt="Logo" style={{ height: "50px" }} />
+        <span style={{ fontSize: "20px", fontWeight: "bold" }}>
+          SECURITY WAVE
+        </span>
+
+        {/* 네비게이션 링크 - SECURITY WAVE 옆에 위치 */}
+        <div
           style={{
-            color: "var(--text-color)",
-            textDecoration: "none",
-            fontSize: "18px",
-            cursor: "pointer",
+            display: "flex",
+            alignItems: "center",
+            gap: "50px",
+            marginLeft: "50px",
           }}
         >
-          Detecting
-        </a>
-        <a
-          href="#developers"
-          style={{
-            color: "var(--text-color)",
-            textDecoration: "none",
-            fontSize: "18px",
-            cursor: "pointer",
-          }}
-        >
-          For Developers
-        </a>
-        <a
-          href="#chains"
-          style={{
-            color: "var(--text-color)",
-            textDecoration: "none",
-            fontSize: "18px",
-            cursor: "pointer",
-          }}
-        >
-          For Chains
-        </a>
-        <a
-          href="#enterprise"
-          style={{
-            color: "var(--text-color)",
-            textDecoration: "none",
-            fontSize: "18px",
-            cursor: "pointer",
-          }}
-        >
-          Enterprise
-        </a>
-        <a
-          href="#company"
-          style={{
-            color: "var(--text-color)",
-            textDecoration: "none",
-            fontSize: "18px",
-            cursor: "pointer",
-          }}
-        >
-          Company
-        </a>
+          <a
+            href="#company"
+            style={{
+              color: "var(--text-color)",
+              textDecoration: "none",
+              fontSize: "18px",
+              fontWeight: "bold", // 굵게 표시
+              cursor: "pointer",
+            }}
+          >
+            Company
+          </a>
+          <span
+            onClick={handleDevelopersClick} // 클릭 이벤트로 handleDevelopersClick 호출
+            style={{
+              color: "var(--text-color)",
+              textDecoration: "none",
+              fontSize: "18px",
+              fontWeight: "bold", // 굵게 표시
+              cursor: "pointer",
+            }}
+          >
+            For Developers
+          </span>
+          <a
+            href="#chains"
+            style={{
+              color: "var(--text-color)",
+              textDecoration: "none",
+              fontSize: "18px",
+              fontWeight: "bold", // 굵게 표시
+              cursor: "pointer",
+            }}
+          >
+            For Chains
+          </a>
+          <a
+            href="#enterprise"
+            style={{
+              color: "var(--text-color)",
+              textDecoration: "none",
+              fontSize: "18px",
+              fontWeight: "bold", // 굵게 표시
+              cursor: "pointer",
+            }}
+          >
+            Enterprise
+          </a>
+          <a
+            href="#docs"
+            style={{
+              color: "var(--text-color)",
+              textDecoration: "none",
+              fontSize: "18px",
+              fontWeight: "bold", // 굵게 표시
+              cursor: "pointer",
+            }}
+          >
+            Docs
+          </a>
+        </div>
       </div>
 
       {/* Sign In & Log In 버튼 */}
@@ -103,20 +124,19 @@ const Header: React.FC = () => {
         style={{
           display: "flex",
           alignItems: "center",
-          gap: "20px",
-          flexShrink: 0, // 오른쪽 요소가 화면 밖으로 나가지 않도록 고정
+          gap: "10px", // 버튼 간격 조정
+          flexShrink: 0, // 버튼 크기 줄어들지 않도록 설정
         }}
       >
         <button
           style={{
             fontSize: "14px",
-            padding: "12px 24px",
+            padding: "8px 16px", // 버튼 크기 조정
             backgroundColor: "transparent",
-            border: "2px solid var(--text-color)", // 테두리 색상
+            border: "2px solid var(--text-color)",
             borderRadius: "5px",
-            color: "var(--text-color)", // 버튼 텍스트 색상
+            color: "var(--text-color)",
             cursor: "pointer",
-            transition: "background-color 0.3s, color 0.3s, border-color 0.3s", // 부드러운 전환 효과
           }}
         >
           Sign In
@@ -124,13 +144,12 @@ const Header: React.FC = () => {
         <button
           style={{
             fontSize: "14px",
-            padding: "12px 24px",
+            padding: "8px 16px", // 버튼 크기 조정
             backgroundColor: "transparent",
-            border: "2px solid var(--text-color)", // 테두리 색상
+            border: "2px solid var(--text-color)",
             borderRadius: "5px",
-            color: "var(--text-color)", // 버튼 텍스트 색상
+            color: "var(--text-color)",
             cursor: "pointer",
-            transition: "background-color 0.3s, color 0.3s, border-color 0.3s", // 부드러운 전환 효과
           }}
         >
           Log In

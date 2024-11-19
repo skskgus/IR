@@ -1,0 +1,2 @@
+file_name,Entropy,ATT&CK Tactic,ATT&CK Technique,MBC Objective,MBC Behavior,Namespace,Capability
+00a1068645dbe982a9aa95e7b8202a588989cd37de2fa1b344abbc0102c27d05,5.64,Defense Evasion,Technique A; Technique B,Persistence,Behavior A,Namespace A,Capability A

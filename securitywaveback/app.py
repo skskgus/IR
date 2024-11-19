@@ -181,14 +181,20 @@ def add_security_headers(response):
 @app.route('/upload', methods=['POST'])
 def upload_file():
     try:
-        # outputs.csv 파일 비우기
+        # outputs.csv 및 mitre/outputs.csv 초기화
         open(output_csv_path, 'w').close()
+        mitre_csv_path = os.path.join(BASE_DIR, 'mitre', 'outputs.csv')
+        os.makedirs(os.path.dirname(mitre_csv_path), exist_ok=True)
+        open(mitre_csv_path, 'w').close()
 
+        # 파일 업로드 확인
         if 'file' not in request.files:
             return jsonify({'error': 'No file part'}), 400
         file = request.files['file']
         if file.filename == '':
             return jsonify({'error': 'No selected file'}), 400
+
+        # 파일 저장
         filename = secure_filename(file.filename)
         file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
         file.save(file_path)
@@ -199,22 +205,45 @@ def upload_file():
             return jsonify({'error': 'Capa analysis failed'}), 500
 
         # CSV에 데이터 쓰기
+        fieldnames = ['file_name', 'Entropy', 'ATT&CK Tactic', 'ATT&CK Technique', 'MBC Objective', 'MBC Behavior', 'Namespace', 'Capability']
+
+        # outputs.csv에 저장
         with open(output_csv_path, 'a', newline='', encoding='utf-8') as file:
-            fieldnames = ['file_name', 'Entropy', 'ATT&CK Tactic', 'ATT&CK Technique', 'MBC Objective', 'MBC Behavior', 'Namespace', 'Capability']
             writer = csv.DictWriter(file, fieldnames=fieldnames)
             writer.writeheader()
             writer.writerow(features)
 
+        # mitre/outputs.csv에 저장
+        with open(mitre_csv_path, 'a', newline='', encoding='utf-8') as mitre_file:
+            writer = csv.DictWriter(mitre_file, fieldnames=fieldnames)
+            writer.writeheader()
+            writer.writerow(features)
+
+        # CSV에서 두 번째 행의 네 번째 열 가져오기
+        second_row_fourth_column = None
+        with open(mitre_csv_path, 'r', encoding='utf-8') as csv_file:
+            reader = csv.reader(csv_file)
+            rows = list(reader)
+
+            # 데이터 확인 및 가져오기
+            if len(rows) > 1 and len(rows[1]) > 3:
+                second_row_fourth_column = rows[1][3]
+        
+        # 로그 기록
+        app.logger.debug(f"Second row, fourth column (ATT&CK Technique): {second_row_fourth_column}")
+
         # 모델 예측 및 차트 생성
         result_probs = model()
         chart_data = create_pie_chart(result_probs[0] * 100, result_probs[1] * 100)
-        
-        # 업로드한 파일과 CSV 파일 삭제
+
+        # 업로드한 파일 삭제
         os.remove(file_path)
-            
+
+        # 응답 데이터
         return jsonify({
             'classification': int(float(result_probs[2])),
-            'chart_data': chart_data
+            'chart_data': chart_data,
+            'second_row_fourth_column': second_row_fourth_column
         })
     except Exception as e:
         logging.error("An error occurred during file upload: " + str(e))
